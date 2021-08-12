@@ -2,5 +2,11 @@
 vendor.camera.hal1.packagelist              u:object_r:vendor_persist_camera_prop:s0
 vendor.camera.skip_unconfigure.packagelist  u:object_r:vendor_persist_camera_prop:s0
 
+# Themed Bootanimation dynamic colors
+persist.bootanim.color1     u:object_r:bootanim_system_prop:s0
+persist.bootanim.color2     u:object_r:bootanim_system_prop:s0
+persist.bootanim.color3     u:object_r:bootanim_system_prop:s0
+persist.bootanim.color4     u:object_r:bootanim_system_prop:s0
+
 # Wi-Fi Display
 media.wfd.                             u:object_r:media_wfd_prop:s0

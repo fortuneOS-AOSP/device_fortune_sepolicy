@@ -1,0 +1,2 @@
+allow updater_app system_data_file:dir r_dir_perms;
+allow updater_app user_profile_root_file:dir r_dir_perms;

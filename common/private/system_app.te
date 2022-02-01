@@ -9,3 +9,6 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 
 # Allow system apps to read qemu props
 get_prop(system_app, qemu_hw_prop)
+
+# Allow system apps to get settingsdebug.instant.packages prop
+get_prop(system_app, settingslib_prop)

@@ -32,3 +32,6 @@ r_dir_file(platform_app, sysfs_zram)
 
 # Phone Link
 allow platform_app vendor_virtual_keyboard_service:service_manager find;
+
+# Allow platform apps to get settingsdebug.instant.packages prop
+get_prop(platform_app, settingslib_prop)

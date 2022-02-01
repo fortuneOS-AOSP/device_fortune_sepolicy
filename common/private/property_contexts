@@ -19,3 +19,6 @@ media.wfd.                             u:object_r:media_wfd_prop:s0
 
 # Tethering
 persist.device_config.tethering.        u:object_r:device_config_tethering_prop:s0
+
+# SettingsLib
+settingsdebug.instant.packages u:object_r:settingslib_prop:s0

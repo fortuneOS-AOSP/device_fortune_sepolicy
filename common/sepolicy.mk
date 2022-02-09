@@ -18,11 +18,15 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/fortune/sepolicy/common/dynamic \
-    device/fortune/sepolicy/common/system
+    device/fortune/sepolicy/common/system \
+    hardware/google/pixel-sepolicy/flipendo \
+    hardware/google/pixel-sepolicy/turbo_adapter
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/fortune/sepolicy/common/dynamic \
-    device/fortune/sepolicy/common/vendor
+    device/fortune/sepolicy/common/vendor \
+    hardware/google/pixel-sepolicy/flipendo \
+    hardware/google/pixel-sepolicy/turbo_adapter
 endif
 
 # Include atv rules on atv product

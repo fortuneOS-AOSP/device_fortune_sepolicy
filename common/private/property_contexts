@@ -1,5 +1,6 @@
 # Aux camera
 vendor.camera.hal1.packagelist              u:object_r:vendor_persist_camera_prop:s0
+vendor.camera.skip_unconfigure.packagelist  u:object_r:vendor_persist_camera_prop:s0
 
 # Wi-Fi Display
 media.wfd.                             u:object_r:media_wfd_prop:s0

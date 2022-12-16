@@ -1,3 +1,6 @@
+# Allow externalstorage access
+allow platform_app mnt_pass_through_file:dir { create_dir_perms mounton };
+
 # OTA
 allow platform_app { cache_file cache_recovery_file }:dir create_dir_perms;
 allow platform_app { cache_file cache_recovery_file }:file create_file_perms;

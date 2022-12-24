@@ -8,8 +8,11 @@ persist.bootanim.color2     u:object_r:bootanim_system_prop:s0
 persist.bootanim.color3     u:object_r:bootanim_system_prop:s0
 persist.bootanim.color4     u:object_r:bootanim_system_prop:s0
 
-# Dolby
-ro.vendor.audio.dolby.dax.support	u:object_r:exported_system_prop:s0
+# Dolby Properties
+ro.vendor.dolby.dax.version            u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.support      u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.dax.version      u:object_r:exported_system_prop:s0
+ro.vendor.audio.dolby.surround.enable  u:object_r:exported_system_prop:s0
 
 # Wi-Fi Display
 media.wfd.                             u:object_r:media_wfd_prop:s0

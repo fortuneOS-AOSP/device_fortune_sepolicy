@@ -26,6 +26,10 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/parasite/sepolicy/common/vendor
 endif
 
+# Flipendo
+BOARD_SEPOLICY_DIRS += \
+    hardware/google/pixel-sepolicy/flipendo
+
 # google_battery service
 BOARD_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/googlebattery

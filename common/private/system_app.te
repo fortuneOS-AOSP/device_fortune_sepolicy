@@ -1,2 +1,5 @@
 # Allow Settings to set wfd resolution prop
 set_prop(system_app, media_wfd_prop)
+
+# Allow Settings to read selinux status
+allow system_app selinuxfs:file r_file_perms;

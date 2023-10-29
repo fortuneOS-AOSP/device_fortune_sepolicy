@@ -26,6 +26,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/parasite/sepolicy/common/vendor
 endif
 
+# Pixel common
+TARGET_INCLUDE_PIXEL_SEPOLICY ?= true
+ifeq ($(TARGET_INCLUDE_PIXEL_SEPOLICY), true)
 # Flipendo
 BOARD_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/flipendo
@@ -37,3 +40,4 @@ BOARD_SEPOLICY_DIRS += \
 # turbo_adapter
 BOARD_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/turbo_adapter
+endif

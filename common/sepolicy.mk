@@ -29,6 +29,9 @@ endif
 # Pixel common
 TARGET_INCLUDE_PIXEL_SEPOLICY ?= true
 ifeq ($(TARGET_INCLUDE_PIXEL_SEPOLICY), true)
+BOARD_SEPOLICY_DIRS += \
+    device/parasite/sepolicy/common/private/google
+
 # Flipendo
 BOARD_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/flipendo

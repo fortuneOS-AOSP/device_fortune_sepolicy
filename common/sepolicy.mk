@@ -17,7 +17,8 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/private/recovery
+    device/parasite/sepolicy/common/private/recovery \
+    device/parasite/sepolicy/common/private/backuptool
 endif
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)

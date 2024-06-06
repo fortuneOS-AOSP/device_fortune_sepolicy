@@ -68,3 +68,9 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE), true)
 else ifeq ($(BOARD_HAS_MTK_HARDWARE), true)
 -include device/parasite/sepolicy/mediatek/sepolicy.mk
 endif
+
+ifneq ($(BOARD_USES_QCOM_HARDWARE), true)
+# Microsoft
+BOARD_SEPOLICY_DIRS += \
+    device/parasite/sepolicy/common/private/microsoft
+endif

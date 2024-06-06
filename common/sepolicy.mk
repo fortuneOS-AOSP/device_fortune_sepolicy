@@ -61,3 +61,10 @@ BOARD_SEPOLICY_DIRS += \
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     hardware/google/pixel-sepolicy/turbo_adapter/public
 endif
+
+# Qcom/MTK
+ifeq ($(BOARD_USES_QCOM_HARDWARE), true)
+-include device/parasite/sepolicy/qcom/sepolicy.mk
+else ifeq ($(BOARD_HAS_MTK_HARDWARE), true)
+-include device/parasite/sepolicy/mediatek/sepolicy.mk
+endif

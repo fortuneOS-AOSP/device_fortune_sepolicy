@@ -1,2 +1,8 @@
 # Pocket judge
 type pocket_judge_sysfs, fs_type, sysfs_type;
+
+# Filesystem discard size
+type discard_max_bytes_device, fs_type, sysfs_type;
+
+# Memory management
+type proc_dirty_bytes, fs_type, proc_type;

@@ -1,3 +1,6 @@
+# Cache cleaner
+/system/bin/init\.cache_cleaner\.sh     u:object_r:cache_cleaner_exec:s0
+
 # Filesystem discard size
 /dev/sys/block/by-name/userdata/queue/discard_max_bytes    u:object_r:discard_max_bytes_device:s0
 /dev/sys/block/by-name/rootdisk/queue/discard_max_bytes    u:object_r:discard_max_bytes_device:s0

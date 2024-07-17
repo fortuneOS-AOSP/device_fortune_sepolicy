@@ -1,3 +1,6 @@
+# Cache cleaner
+system_internal_prop(cache_cleaner_prop)
+
 # Wi-Fi Display
 system_public_prop(media_wfd_prop);
 

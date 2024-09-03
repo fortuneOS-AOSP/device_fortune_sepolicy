@@ -1,3 +1,8 @@
 recovery_only(`
 permissive recovery;
+
+set_prop(recovery, shell_prop)
+get_prop(recovery, shell_prop)
+set_prop(recovery, adbd_recovery_prop)
+get_prop(recovery, adbd_recovery_prop)
 ')

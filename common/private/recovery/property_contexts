@@ -1,0 +1,2 @@
+# ADB
+ro.adb.secure.recovery              u:object_r:adbd_recovery_prop:s0

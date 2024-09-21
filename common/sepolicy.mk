@@ -10,40 +10,40 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/public
+    device/fortune/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/private
+    device/fortune/sepolicy/common/private
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/private/recovery \
-    device/parasite/sepolicy/common/private/backuptool
+    device/fortune/sepolicy/common/private/recovery \
+    device/fortune/sepolicy/common/private/backuptool
 endif
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/dynamic \
-    device/parasite/sepolicy/common/system
+    device/fortune/sepolicy/common/dynamic \
+    device/fortune/sepolicy/common/system
 
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/dynamic \
-    device/parasite/sepolicy/common/vendor
+    device/fortune/sepolicy/common/dynamic \
+    device/fortune/sepolicy/common/vendor
 endif
 
 # Pixel common
 TARGET_INCLUDE_PIXEL_SEPOLICY ?= true
 ifeq ($(TARGET_INCLUDE_PIXEL_SEPOLICY), true)
 BOARD_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/private/google
+    device/fortune/sepolicy/common/private/google
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/system/google
+    device/fortune/sepolicy/common/system/google
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/vendor/google
+    device/fortune/sepolicy/common/vendor/google
 endif
 
 # Flipendo
@@ -64,13 +64,13 @@ endif
 
 # Qcom/MTK
 ifeq ($(BOARD_USES_QCOM_HARDWARE), true)
--include device/parasite/sepolicy/qcom/sepolicy.mk
+-include device/fortune/sepolicy/qcom/sepolicy.mk
 else ifeq ($(BOARD_HAS_MTK_HARDWARE), true)
--include device/parasite/sepolicy/mediatek/sepolicy.mk
+-include device/fortune/sepolicy/mediatek/sepolicy.mk
 endif
 
 ifneq ($(BOARD_USES_QCOM_HARDWARE), true)
 # Microsoft
 BOARD_SEPOLICY_DIRS += \
-    device/parasite/sepolicy/common/private/microsoft
+    device/fortune/sepolicy/common/private/microsoft
 endif
